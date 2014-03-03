@@ -4,19 +4,22 @@ var game = new Phaser.Game(400, 490, Phaser.AUTO, 'game_div');
 // Creates a new 'main' state that wil contain the game
 var main_state = {
 
-    preload: function() { 
-		// Function called first to load all the assets
+    preload: function() {
+	     this.game.load.image('horse','assets/horse.png');
+
+
     },
 
-    create: function() { 
-    	// Fuction called after 'preload' to setup the game    
+    create: function() {
+      this.horse = this.game.add.sprite(100,100,'horse');
+
     },
-    
+
     update: function() {
 		// Function called 60 times per second
     },
 };
 
 // Add and start the 'main' state to start the game
-game.state.add('main', main_state);  
-game.state.start('main'); 
+game.state.add('main', main_state);
+game.state.start('main');
