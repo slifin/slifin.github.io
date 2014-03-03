@@ -5,6 +5,8 @@ var game = new Phaser.Game(400, 490, Phaser.AUTO, 'game_div');
 var main_state = {
 
     preload: function() {
+
+      this.game.stage.backgroundColor = '#71c5cf';
 	     this.game.load.image('horse','assets/horse.png');
 
 
