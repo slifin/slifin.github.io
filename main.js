@@ -8,7 +8,10 @@ var main_state = {
 
       this.game.stage.backgroundColor = '#71c5cf';
 	    this.game.load.image('horse','assets/horse.png');
-
+      keys = game.input.keyboard.createCursorKeys();
+      if (keys.left.isDown){
+        console.log('pressing left');
+      }
 
     },
 
