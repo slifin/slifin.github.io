@@ -8,10 +8,7 @@ var main_state = {
 
       this.game.stage.backgroundColor = '#71c5cf';
 	    this.game.load.image('horse','assets/horse.png');
-      keys = game.input.keyboard.createCursorKeys();
-      if (keys.left.isDown){
-        console.log('pressing left');
-      }
+
 
     },
 
@@ -19,6 +16,10 @@ var main_state = {
       this.horse = this.game.add.sprite(20 ,20,'horse');
       this.horse.body.gravity.y = 1000;
       this.horse.body.collideWorldBounds = true;
+      keys = game.input.keyboard.createCursorKeys();
+      if (keys.left.isDown){
+        console.log('pressing left');
+      }
 
     },
 
