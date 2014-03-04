@@ -16,20 +16,18 @@ var main_state = {
       this.horse = this.game.add.sprite(20 ,20,'horse');
       this.horse.body.gravity.y = 1000;
       this.horse.body.collideWorldBounds = true;
-      keys = game.input.keyboard.createCursorKeys();
-      if (keys.left.isDown){
-        console.log('pressing left');
-      }
+      cursors = game.input.keyboard.createCursorKeys();
 
     },
 
     update: function() {
 		// Function called 60 times per second
+      if (cursors.down.isDown){
+        this.horse.body.velocity.y = 100;
+      }else if(cursors.left.isDown){
+        this.horse.body.velocity.x = 100;
+      }
 
-    keys = game.input.keyboard.createCursorKeys();
-    if (keys.left.isDown){
-      console.log('pressing left 2');
-    }
     },
 };
 
