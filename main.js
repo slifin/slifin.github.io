@@ -7,13 +7,13 @@ var main_state = {
     preload: function() {
 
       this.game.stage.backgroundColor = '#71c5cf';
-	     this.game.load.image('horse','assets/horse.png');
+	    this.game.load.image('horse','assets/horse.png');
 
 
     },
 
     create: function() {
-      this.horse = this.game.add.sprite(100,100,'horse');
+      this.horse = this.game.add.sprite(20 ,20,'horse');
 
     },
 
