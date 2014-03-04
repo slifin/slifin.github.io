@@ -15,6 +15,7 @@ var main_state = {
     create: function() {
       this.horse = this.game.add.sprite(20 ,20,'horse');
       this.horse.body.gravity.y = 1000;
+      body.collideWorldBounds = true;
 
     },
 
