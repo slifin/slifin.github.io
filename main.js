@@ -25,6 +25,11 @@ var main_state = {
 
     update: function() {
 		// Function called 60 times per second
+
+    keys = game.input.keyboard.createCursorKeys();
+    if (keys.left.isDown){
+      console.log('pressing left 2');
+    }
     },
 };
 
