@@ -2,23 +2,20 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>Henry, he's a horse</title>
-  <style>
-  #game_div {
-    width: 400px;
-    margin: auto;
-    margin-top: 50px;
-  }
-  #title{
-    width:200px;
-    margin:auto;
-  }
-  </style>
-  <script type="text/javascript" src="phaser.min.js"></script>
-  <script type="text/javascript" src="main.js"></script>
+  <title>Clojure and clojure based accessories</title>
+  <link rel="stylesheet" type="text/css" href="http://app.klipse.tech/css/codemirror.css">
+  <script>
+    window.klipse_settings = {
+        selector: '.language-klipse'// css selector for the html elements you want to klipsify
+    };
+  </script>
+  <script src="http://app.klipse.tech/plugin/js/klipse_plugin.js"></script>
 </head>
 <body>
-  <div id="title">Henry the horse</div>
-  <div id="game_div"> </div>
+  <pre>
+    <code class="language-klipse">
+      (map inc [1 2 3])
+     </code>
+   </pre>
 </body>
 </html>
